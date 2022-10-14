@@ -8,10 +8,10 @@ OBJCOPY=`which arm-none-eabi-objcopy`
 COMPILER=`which arm-none-eabi-gcc`
 RANLIB=`which arm-none-eabi-ranlib`
 
-# TARGET_C_FLAGS="-g3 -O3 -MMD -MP -mthumb --specs=nosys.specs -mcpu=cortex-m4 -mpure-code -nostartfiles"
-TARGET_C_FLAGS="-g3 -O3 -MMD -MP -mthumb --specs=nosys.specs -mcpu=cortex-m4 -mpure-code"
+TARGET_C_FLAGS="-g3 -O3 -MMD -MP -mthumb --specs=nosys.specs -mcpu=cortex-m4 -mpure-code -nostartfiles -Wa,-mimplicit-it=thumb"
+# TARGET_C_FLAGS="-g3 -O3 -MMD -MP -mthumb --specs=nosys.specs -mcpu=cortex-m4 -mpure-code"
 
-NUCLEO_DIRECTORY=/media/sf_Shared/nucleo/
+NUCLEO_DIRECTORY=/media/sf_Shared/arm-nucleo-prolepsis/
 
 cmake "$NUCLEO_DIRECTORY"/sw/ \
     -DCMAKE_C_COMPILER="$COMPILER" \

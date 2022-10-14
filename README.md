@@ -29,8 +29,8 @@ This will setup everything to perform simulations.
 Each benchmark supports the following targets (available through `make` after running `cmake-configure.aftab.gcc.sh`):
 
 * ${NAME}.elf: Compile the application and generate the elf file
-* ${NAME}.read: Perform an objdump of the executable sections of the binary and save it as ${NAME}.read
-* ${NAME}.list: Perform an objdump of the binary with -D option (i.e., with all data) and save it as ${NAME}.lst
+* ${NAME}.read: Perform an objdump of the executable sections of the binary and save it as {NAME}.read
+* ${NAME}.list: Perform an objdump of the binary with -D option (i.e., with all data) and save it as {NAME}.lst
 * ${NAME}.bin: Create the .bin file ready to be flashed to Nucleo F429ZI board
 * ${NAME}.flash: Flash the board with the selected benchmark
 

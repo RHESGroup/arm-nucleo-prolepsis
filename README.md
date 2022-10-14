@@ -4,7 +4,7 @@ This folder contains a set of benchmarks useful for experimental evaluation of t
 
 ## Documentation 
 
-All the experimental data are reported under the folder /doc.
+All the experimental data are reported under the folder `/doc`.
 
 ## Running benchmarks
 
